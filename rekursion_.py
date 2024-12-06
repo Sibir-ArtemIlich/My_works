@@ -1,16 +1,24 @@
 def get_multiplied_digits(number):
     str_number = str(number)
-    if len(str_number) > 1:
-        first = int(str_number[0])
+    first = int(str_number[0])
+    if len(str_number) > 1:     
         return first * get_multiplied_digits(int(str_number[1:]))
     else:
-        return int(str_number)
+         if first ==0:
+            return first + 1
+        else:
+            return first
 
-result = get_multiplied_digits(40203)
-result_1 = get_multiplied_digits(1824)
-result_2 = get_multiplied_digits(30507)
+result = get_multiplied_digits(402030)
+result_1 = get_multiplied_digits(40203)
+result_2 = get_multiplied_digits(305070)
 print(result)
 print()
 print(result_1)
 print()
 print(result_2)
+#24
+
+#24
+
+#105
